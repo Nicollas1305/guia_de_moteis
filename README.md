@@ -1,16 +1,54 @@
-# guia_de_moteis
+# 📌 Guia de Motéis  
 
-A new Flutter project.
+Este projeto foi desenvolvido como parte de um **processo seletivo**, demonstrando habilidades em **consumo de APIs**, organização com **Clean Architecture**, **gerenciamento de estado** e **testes unitários**.  
 
-## Getting Started
+## 🚀 Funcionalidades  
 
-This project is a starting point for a Flutter application.
+- Listagem de motéis e suas suítes a partir de uma API externa.
+- Interface responsiva e interativa.
+- Testes unitários cobrindo os principais cenários.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Tecnologias  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**  
+- **Dart**  
+- **Http Package**  
+- **Mockito** (para testes unitários)  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✅ Testes Unitários  
+
+O projeto conta com **testes unitários bem estruturados**, garantindo a confiabilidade da aplicação.  
+
+### 🖥️ **Testes de Widget**  
+
+- `Renderiza corretamente a AppBarWidget.`
+- `Alterna entre "Ir agora" e "Ir outro dia" corretamente.`  
+- `Renderiza corretamente o FilterScroll e contém itens.`  
+- `Lista de filtros pode ser rolada.`  
+- `Exibe indicador de carregamento enquanto os motéis são buscados.`  
+- `Exibe mensagem quando não há motéis.`  
+- `Renderiza motéis e suítes com todas as suas informações corretamente.`  
+
+### 🏗️ **Testes de Modelos**  
+
+- `Deve criar uma instância de Motel corretamente.`  
+- `Deve converter JSON para Motel corretamente.`  
+- `Deve converter JSON para Suite corretamente.`  
+- `Deve converter JSON para Period corretamente.`  
+- `Deve converter JSON para ItemCategoria corretamente.`  
+
+### 🔗 **Testes de Serviço (API)**  
+
+- `Deve retornar uma lista de motéis ao receber um HTTP 200.`  
+- `Deve lançar exceção quando a resposta tem um formato inesperado.`  
+- `Deve lançar exceção ao receber um erro HTTP.`  
+- `Deve lançar exceção ao ocorrer um erro de conexão.`  
+
+## 🔎 Como rodar os testes  
+
+Execute os comandos abaixo no terminal para rodar os testes e gerar um relatório de cobertura:  
+
+```sh
+flutter test --coverage
+genhtml coverage/lcov.info -o coverage/html
+open coverage/html/index.html
