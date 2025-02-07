@@ -6,9 +6,11 @@ class MotelProvider with ChangeNotifier {
   final MotelService _motelService = MotelService();
   List<Motel> _motels = [];
   bool _isLoading = false;
+  bool _isNowSelected = true;
 
   List<Motel> get moteis => _motels;
   bool get isLoading => _isLoading;
+  bool get isNowSelected => _isNowSelected;
 
   Future<void> loadMotels() async {
     _isLoading = true;
@@ -22,5 +24,10 @@ class MotelProvider with ChangeNotifier {
       _isLoading = false;
       notifyListeners();
     }
+  }
+
+  void toggleIsNowSelected() {
+    _isNowSelected = !_isNowSelected;
+    notifyListeners();
   }
 }
