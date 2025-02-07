@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../core/constants/api_constants.dart';
+import '../core/utils/response_decode.dart';
 import '../models/motel_model.dart';
 
 class MotelService {
@@ -13,9 +14,10 @@ class MotelService {
 
     try {
       final response = await client.get(url);
+      final decodedBody = decodeResponseBody(response.body);
 
       if (response.statusCode == 200) {
-        final Map<String, dynamic> data = json.decode(response.body);
+        final Map<String, dynamic> data = json.decode(decodedBody);
         if (data.containsKey('data') && data['data'].containsKey('moteis')) {
           final List<dynamic> moteisJson = data['data']['moteis'];
           return moteisJson.map((json) => Motel.fromJson(json)).toList();
