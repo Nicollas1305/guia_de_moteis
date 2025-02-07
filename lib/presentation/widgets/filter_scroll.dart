@@ -11,6 +11,16 @@ class FilterScroll extends StatelessWidget {
     'hidro',
     'piscina',
     'sauna',
+    'ofurô',
+    'decoração erótica',
+    'decoração temática',
+    'cadeira erótica',
+    'pista de dança',
+    'garagem privativa',
+    'frigobar',
+    'internet wi-fi',
+    'suíte para festas',
+    'suíte com acessibilidade',
   ];
 
   @override
@@ -18,26 +28,28 @@ class FilterScroll extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: SizedBox(
-        height: 40,
+        height: 35,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 16),
           itemCount: filters.length,
           itemBuilder: (context, index) {
-            return Container(
-              margin: const EdgeInsets.only(right: 10),
-              padding: const EdgeInsets.symmetric(
-                horizontal: 15,
-                vertical: 8,
-              ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: Colors.grey.shade400),
-              ),
-              child: Text(
-                filters[index],
-                style: const TextStyle(fontSize: 14),
+            return Center(
+              child: Container(
+                margin: const EdgeInsets.only(right: 10),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 8,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.grey.shade300),
+                ),
+                child: Text(
+                  filters[index],
+                  style: const TextStyle(fontSize: 14),
+                ),
               ),
             );
           },
