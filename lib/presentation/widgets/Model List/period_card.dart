@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:guia_de_moteis/core/utils/currency_formatter.dart';
 import '../../../models/period_model.dart';
 
 class PeriodCard extends StatelessWidget {
@@ -37,8 +37,8 @@ class PeriodCard extends StatelessWidget {
               ),
               const SizedBox(height: 7),
               Text(
-                "R\$ ${periodo.totalValue.toStringAsFixed(2)}",
-                style: const TextStyle(fontSize: 18, color: Colors.black87),
+                CurrencyFormatter.format(periodo.totalValue),
+                style: const TextStyle(fontSize: 18, color: Colors.black54),
               ),
             ],
           ),
