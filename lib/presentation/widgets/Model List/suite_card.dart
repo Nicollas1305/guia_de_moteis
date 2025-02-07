@@ -25,7 +25,6 @@ class SuiteCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Imagem da suíte
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: ClipRRect(
@@ -39,7 +38,6 @@ class SuiteCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          // Nome da suíte
           Center(
             child: Padding(
               padding: const EdgeInsets.all(8),
