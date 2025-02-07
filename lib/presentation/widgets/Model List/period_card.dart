@@ -10,7 +10,7 @@ class PeriodCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 350,
-      height: 75,
+      height: 90,
       margin: const EdgeInsets.only(right: 12),
       padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
       decoration: BoxDecoration(
