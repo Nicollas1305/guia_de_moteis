@@ -104,9 +104,9 @@ void main() {
       // Verifica os dados da suíte //
       expect(find.text("Suite Master"), findsOneWidget);
       expect(find.text("2 horas"), findsOneWidget);
-      expect(find.text("R\$ 40.00"), findsOneWidget);
+      expect(find.text("R\$ 40,00"), findsOneWidget);
       expect(find.text("3 horas"), findsOneWidget);
-      expect(find.text("R\$ 60.00"), findsOneWidget);
+      expect(find.text("R\$ 60,00"), findsOneWidget);
 
       expect(
         find.byWidgetPredicate(
