@@ -4,11 +4,15 @@ import '../core/constants/api_constants.dart';
 import '../models/motel_model.dart';
 
 class MotelService {
+  final http.Client client;
+
+  MotelService({http.Client? client}) : client = client ?? http.Client();
+
   Future<List<Motel>> fetchMoteis() async {
     final url = Uri.parse('${ApiConstants.baseURL}/b/1IXK');
 
     try {
-      final response = await http.get(url);
+      final response = await client.get(url);
 
       if (response.statusCode == 200) {
         final Map<String, dynamic> data = json.decode(response.body);
