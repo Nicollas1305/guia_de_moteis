@@ -2,9 +2,9 @@
 
 Este projeto foi desenvolvido como parte de um **processo seletivo**, demonstrando habilidades em **consumo de APIs**, organização com **Clean Architecture**, **gerenciamento de estado** e **testes unitários**.
 
-<p align="center">
-  <video src="docs/Gravação de Tela.mp4" controls width="300"></video>
-</p>
+
+🎥 [Assistir demonstração (MOV)](https://drive.google.com/file/d/14V5RWdgXxJ-4urTAOcQhcOA2Y5VmBqLm/view?usp=sharing)
+
 
 ## 🚀 Funcionalidades  
 
