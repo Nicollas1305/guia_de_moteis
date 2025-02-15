@@ -1,6 +1,10 @@
 # 📌 Guia de Motéis  
 
-Este projeto foi desenvolvido como parte de um **processo seletivo**, demonstrando habilidades em **consumo de APIs**, organização com **Clean Architecture**, **gerenciamento de estado** e **testes unitários**.  
+Este projeto foi desenvolvido como parte de um **processo seletivo**, demonstrando habilidades em **consumo de APIs**, organização com **Clean Architecture**, **gerenciamento de estado** e **testes unitários**.
+
+<p align="center">
+  <video src="docs/Gravação de Tela.mov" controls width="300"></video>
+</p>
 
 ## 🚀 Funcionalidades  
 
